@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs') %>
+    <div class="container mt-5">
+        <h1>Home</h1>
+
+        <% if(user) { %> 
+            <h3>Logget inn som <%= user.username %></h3>
+        <% } %>
+    </div>
+
+<%- include('partials/footer.ejs') %>
